@@ -1,0 +1,13 @@
+.catalog-page {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .thumbnail {
+    &:hover {
+      border-color: darkcyan;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .header {
+    background-color: darkcyan;
+
+    .navbar-header {
+      a {
+        color: rgb(8, 8, 8);
+        font-size: 40px;
+        padding: 20px;
+        text-decoration: none;
+      }
+    }
+
+    ul.nav.navbar-nav {
+      display: flex;
+      justify-content: center;
+
+      li {
+        list-style: none;
+        margin: 0px 15px;
+
+        &.active {
+          a {
+            color: cyan;
+          }
+        }
+
+        a {
+          color: white;
+          font-size: 25px;
+          font-family: sans-serif;
+          text-decoration: none;
+
+          &:hover {
+            color: cyan;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  .footer {
+    background-color: darkcyan;
+    padding: 20px;
+  }
+}

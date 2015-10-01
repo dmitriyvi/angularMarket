@@ -1,0 +1,9 @@
+<ul class="navbar-nav"  ng-controller="MenuListCtrl">
+  <li ng-class="{ 'active': isActive('/') }"><a href="#/">Главная</a></li>
+  <li ng-class="{ 'active': isActive('/about') }"><a ng-href="#/about">О магазине</a></li>
+  <li ng-class="{ 'active': isActive('/catalog') }"><a ng-href="#/catalog">Все товары</a></li>
+  <li ng-class="{ 'active': isActive('/search') }"><a ng-href="#/search">Поиск товаров</a></li>
+  <li ng-class="{ 'active': isActive('/products/{{item.link}}') }" ng-repeat="item in Categories">
+    <a ng-href="#/products/{{item.link}}">{{item.name}}</a>
+  </li>
+</ul>

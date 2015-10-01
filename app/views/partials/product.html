@@ -1,0 +1,10 @@
+<a href="#/product/{{item.id}}">
+  <div class="thumbnail" >
+    <img ng-src="{{item.image}}">
+    <div class="caption">
+      <h3>{{item.title}}</h3>
+      <p>Цена: {{item.price}} руб</p>
+      <p><a class="btn btn-primary" role="button" product="item" cart-add-button>В корзину</a></p>
+    </div>
+  </div>
+</a>

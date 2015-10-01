@@ -1,0 +1,29 @@
+span.sum-cart {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sum-cart-block {
+  text-align: center;
+
+  span.sum-cart {
+    font-size: 25px;
+  }
+}
+
+a.checkout-link {
+  background-color: rebeccapurple;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(53, 17, 90);
+  }
+}
