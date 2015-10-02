@@ -1,4 +1,3 @@
-<!-- CART LIST DIRECTIVE -->
 <div class="dropdown">
 
   <button id="cartBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -6,50 +5,12 @@
   </button>
 
   <ul class="dropdown-menu" aria-labelledby="dLabel">
-  <div class="table-responsive">
-    <table class="cart-table ">
-        <thead>
-            <tr><th colspan="2"></th>
-            <th>Кол-во</th>
-            <th class="text-right">Цена</th>
-        </tr></thead>
-        <tbody>
-            <tr ng-repeat="item in items" class="ng-scope">
-                <td class="img-col">
-                    <img class="img-responsive img-thumbnail" ng-src="{{item.product.image}}">
-                </td>
-                <td class="name-col">
-                    <div>
-                        <a ng-href="#/product/{{item.product.id}}">{{item.product.title}}</a>
-                    </div>
-                    <div>
-                        <span class="price">
-                            {{item.product.price}} руб
-                        </span>
-                    </div>
-                </td>
-                <td class="quantity-col">
-                    <div style="position:relative;">
-                      <!-- COUNT ITEM FROM CART DIRECTIVE -->
-                        <cart-item-count item-cart="item" ></cart-item-count>
-                      <!-- COUNT ITEM FROM CART DIRECTIVE -->
-                      <!-- REMOVE ITEM FROM CART DIRECTIVE -->
-                      <span class="glyphicon glyphicon-remove-sign remove" ng-click="removeItem(item)"></span>
-                      <!-- REMOVE ITEM FROM CART DIRECTIVE -->
-                    </div>
-                </td>
-                <td class="price-col text-right ng-binding">
-                    {{item.product.price}} руб
-                </td>
-            </tr><!-- end ngRepeat: item in cart.items -->
-        </tbody>
-    </table>
-      <div class="sum">
-        <div class="sum-cart-block">Сумма: <span class="sum-cart"> {{getTotal()}}</span> руб</div>
-      </div>
+    <!-- CART LIST DIRECTIVE -->
+      <cart-list items="items"></cart-list>
+    <!-- CART LIST DIRECTIVE -->
+
       <div class="checkout">
         <a ng-href="#/checkout" class="checkout-link">Checkout</a>
       </div>
-    </div>
   </ul>
 </div>

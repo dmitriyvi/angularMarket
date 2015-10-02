@@ -9,16 +9,7 @@
 ###
 angular.module 'ssApp'
   .controller 'CatalogCtrl', [ '$scope', 'products', ( $scope, products ) ->
-    @awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
-
-    $scope.getProducts = ->
-      $scope.items = products.AllProducts()
-
-    $scope.getProducts()
+    $scope.items = products.AllProducts()
 
     return
-  ]  
+  ]

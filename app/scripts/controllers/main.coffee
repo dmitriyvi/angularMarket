@@ -9,16 +9,7 @@
 ###
 angular.module 'ssApp'
   .controller 'MainCtrl', [ '$scope', 'products', ( $scope, products ) ->
-    @awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
-
-    $scope.getPopulatProducts = ->
-      $scope.popProducts = products.filterByPopular()
-
-    $scope.getPopulatProducts()
+    $scope.popProducts = products.filterByPopular()
 
     return
   ]

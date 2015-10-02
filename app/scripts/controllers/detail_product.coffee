@@ -9,17 +9,8 @@
 ###
 angular.module 'ssApp'
   .controller 'DetailProductCtrl', [ '$scope', '$routeParams', 'products' ,($scope, $routeParams, products) ->
-    @awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
-
-    $scope.getProduct = ->
-      itemId = $routeParams.productId
-      $scope.item = products.get(itemId);
-
-    $scope.getProduct()
+    itemId = $routeParams.productId
+    $scope.item = products.get(itemId);
 
     return
   ]

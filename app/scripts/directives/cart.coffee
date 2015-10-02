@@ -12,7 +12,6 @@ angular.module 'ssApp'
     templateUrl: 'views/partials/cart.html'
 
     link: (scope, element) ->
-      scope.items = cart.items # cart.getItems()
       scope.getTotal = ->
         return cart.getTotal()
 
