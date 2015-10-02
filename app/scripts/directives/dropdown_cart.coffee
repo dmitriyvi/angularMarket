@@ -2,14 +2,14 @@
 
 ###*
  # @ngdoc directive
- # @name ssApp.directive:cart
+ # @name ssApp.directive:dropdownCart
  # @description
- # # cart
+ # # dropdownCart
 ###
 angular.module 'ssApp'
-  .directive 'cart', ['cart', '$rootScope', (cart, $rootScope) ->
+  .directive 'dropdownCart',['cart', '$rootScope', (cart, $rootScope) ->
     restrict: 'EA'
-    templateUrl: 'views/partials/cart.html'
+    templateUrl: 'views/partials/dropdown_cart.html'
 
     link: (scope, element) ->
       scope.getTotal = ->
